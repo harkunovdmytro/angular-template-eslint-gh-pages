@@ -1,7 +1,9 @@
 {
   "root": true,
   "ignorePatterns": [
-    "projects/**/*"
+    "projects/**/*",
+    "*.spec.ts",
+    "polyfills.ts"
   ],
   "overrides": [
     {
@@ -16,7 +18,8 @@
       },
       "extends": [
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:prettier/recommended"
       ],
       "rules": {
         "semi": ["error", "always"],
